@@ -1,4 +1,4 @@
-<html ng-app="appz" ng-cloak ng-controller="controller1">
+<html ng-app="appz" ng-cloak>
 <head>
     <title ng-bind="title"></title>
 
@@ -11,8 +11,6 @@
 
 
     <script>
-angular.module('appz', [])
-
 angular.module('appz').directive('ball', ['googleFactory', function (googleFactory) {
 
     var setAttribute = function(attrs, newValue, element) {
