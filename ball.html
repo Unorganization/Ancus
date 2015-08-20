@@ -4,18 +4,6 @@
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-</head>
-<body>
-    <p ng-bind="title"></p>
-    <span my-sample></span>
-    <p></p>
-    <p>Enter ball type: <input type="text" ng-model="ballType" /></p>
-    <ball ng-init="ballType='red'"type="{{ballType}}" />
-
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.js"></script>
-
     <script>
 angular.module('appz').directive('ball', ['googleFactory', function (googleFactory) {
 
@@ -90,5 +78,19 @@ angular.module('appz').factory('googleFactory', ['$http', function ($http) {
     };
 }]);
     </script>
+
+</head>
+<body>
+    <p ng-bind="title"></p>
+    <span my-sample></span>
+    <p></p>
+    <p>Enter ball type: <input type="text" ng-model="ballType" /></p>
+    <ball ng-init="ballType='red'"type="{{ballType}}" />
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.js"></script>
+
+
 </body>
 </html>
