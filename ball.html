@@ -1,4 +1,4 @@
-<html ng-app="app" ng-cloak ng-controller="controller1">
+<html ng-app="appz" ng-cloak ng-controller="controller1">
 <head>
     <title ng-bind="title"></title>
 
@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
 
     <script>
-angular.module('app').directive('ball', ['googleFactory', function (googleFactory) {
+angular.module('appz').directive('ball', ['googleFactory', function (googleFactory) {
 
     var setAttribute = function(attrs, newValue, element) {
 
@@ -49,7 +49,7 @@ angular.module('app').directive('ball', ['googleFactory', function (googleFactor
 }]);
 
 
-angular.module('app').factory('googleFactory', ['$http', function ($http) {
+angular.module('appz').factory('googleFactory', ['$http', function ($http) {
 
     // what = 'web', 'images', 'local', 'video', blogs', 'news', 'books', 'patent', etc.
     var getSearchResults = function (searchTerm, what) {
