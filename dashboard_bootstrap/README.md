@@ -1,0 +1,1 @@
+A single file that sample of a dashboard / admin page.

@@ -1,0 +1,9 @@
+{
+  "name": "node",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "test-watch": "node --test --watch"
+  }
+}
